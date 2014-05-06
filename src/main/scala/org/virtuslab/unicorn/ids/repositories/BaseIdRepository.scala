@@ -99,6 +99,7 @@ class BaseIdRepository[I <: BaseId, A <: WithId[I], T <: IdTable[I, A]](tableNam
         // if (rowsUpdated == 1) id oops this should be commented :)
         //else throw new SQLException(s"Error during save in table: $tableName, " +
         //s"for id: $id - $rowsUpdated rows updated, expected: 1. Entity: $elem")
+        println("alalala " + id)
         id
       case None =>
         queryReturningId insert elem
