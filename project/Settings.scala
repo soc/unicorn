@@ -41,7 +41,7 @@ object Settings {
 
   // common settings for play and core modules
   val common = core ++ Seq(
-    scalaVersion := "2.10.4",
+    scalaVersion := "2.11.1",
     resolvers += Resolver.typesafeRepo("releases"),
     resolvers += Resolver.sonatypeRepo("releases"),
     resolvers += Resolver.sonatypeRepo("snapshots"),
